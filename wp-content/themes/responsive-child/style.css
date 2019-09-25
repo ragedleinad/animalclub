@@ -29,3 +29,12 @@ Read More:
 - http://cyberchimps.com/guide-tags/child-theme-2/
 
 */
+
+
+#container{
+  max-width: 100%;
+}
+
+#header_section > div.header_container {
+  display: flex;
+}

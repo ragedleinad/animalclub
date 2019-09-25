@@ -50,10 +50,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div id="container" class="hfeed">
 
 <?php responsive_header(); // before header hook. ?>
+
 	<div class="skip-container cf">
 		<a class="skip-link screen-reader-text focusable" href="#content"><?php esc_html_e( '&darr; Skip to Main Content', 'responsive' ); ?></a>
 	</div><!-- .skip-container -->
 	<div id="header_section">
+		<div class="header_container">
+			<div class="h-logo">
+				<img class="topL" src="<?php echo get_stylesheet_directory_uri(); ?>/images/cropped-cropped-logo-animal-club-1.png"/>
+			</div>
+			<div class="h-text">
+				Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+			</div>
+			<div class="h-image">
+				<img class="topL" src="<?php echo get_stylesheet_directory_uri(); ?>/images/cropped-Molly-y-Nuca2-1-300x246.jpg"/>
+			</div>
+
+		</div>
+
+
+
 		<?php $header_layout = get_theme_mod( 'header_layout_options', 'default' ); ?>
 	<div id="header" role="banner" class='<?php echo esc_attr( $header_layout ); ?>' <?php responsive_schema_markup( 'header' ); ?> >
 
@@ -74,7 +90,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php responsive_in_header(); // header hook. ?>
 		<div id="content-outer" class='responsive-header' <?php responsive_schema_markup( 'organization' ); ?>>
-			<div id="logo" <?php responsive_schema_markup( 'logo' ); ?>>
+			<!-- <div id="logo" <?php responsive_schema_markup( 'logo' ); ?>>
 		<?php if ( has_custom_logo() ) { ?>
 					<?php the_custom_logo(); ?>
 					<?php
@@ -113,7 +129,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-		</div><!-- end of #logo -->
+		</div> -->
+		<!-- end of #logo -->
 		<?php do_action( 'responsive_header_container' ); ?>
 	</div>
 
